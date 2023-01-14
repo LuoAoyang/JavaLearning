@@ -75,6 +75,39 @@
             System.out.print(i+"  ");
         }
     }
+    
+3.方法
+
+        方法：修饰符 返回值类型 方法名(变量类型 变量名，...){
+        ...
+        return 返回值;
+        }
+        返回值类型为空，用void
+        方法重载：一个类的两个方法具有相同的名字，方法重载返回值类型可以相同或者不相同，
+        但变量类型它的类型或者顺序必须不同，即参数列表必须不同，所以只根据返回值类型不同无法判断这个重载是否有效
+        命令行传参：(但现在我不太明白具体有什么用，或者应该用到哪里)
+        例子：
+        package com.luoaoyang.study;
+        //命令行传参
+        public class Demo02 {
+        public static void main(String[] args) {
+            for(int i=0;i< args.length;i++){
+                System.out.println(args[i]);
+                }
+            }
+        }
+        可变参数：1个方法中只能有一个可变参数，且必须在最后
+        格式为typeName... parameterName
+        例子：void(int... a)、double(double... num)
+        递归讲解：程序调用自身，调用的本质就是栈的先进后出，不过递归一般不适用，因为递归太多次占用的空间内存也很大，电脑受不住
+        
+4.数组
+
+        数组的定义：int[] a=new int[10];
+        java中也有类似与c、c++的int a[];但我们一般使用上面的
+        
+        
+        
  
 
 
